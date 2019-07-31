@@ -2,4 +2,6 @@ ro\msg\edu\jbugs\model\entity\Bug.class
 ro\msg\edu\jbugs\model\entity\User.class
 ro\msg\edu\jbugs\model\entity\BaseEntity.class
 ro\msg\edu\jbugs\model\dao\BugDao.class
+ro\msg\edu\jbugs\model\dao\CommentDao.class
 ro\msg\edu\jbugs\model\dao\UserDao.class
+ro\msg\edu\jbugs\model\entity\Comment.class

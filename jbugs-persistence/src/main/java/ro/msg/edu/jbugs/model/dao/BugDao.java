@@ -1,6 +1,7 @@
 package ro.msg.edu.jbugs.model.dao;
 
 import ro.msg.edu.jbugs.model.entity.Bug;
+import ro.msg.edu.jbugs.model.entity.Bug;
 import ro.msg.edu.jbugs.model.entity.User;
 
 import javax.ejb.Stateless;
@@ -8,6 +9,8 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import javax.persistence.TypedQuery;
+import java.sql.Date;
+import java.util.Calendar;
 import java.util.List;
 import java.util.Set;
 
@@ -68,6 +71,17 @@ public class BugDao {
         query.setParameter("user",user);
         List resultList = query.getResultList();
         return resultList;
+    }
+
+    public Integer removeOld()
+    {
+        Calendar cal = Calendar.getInstance();
+        Date date = new java.sql.Date(cal.getTimeInMillis());
+
+        Query query = entityManager.createNamedQuery(Bug.REMOVE_OLD_BUGS);
+        query.setParameter("expiryDate",date);
+        int update = query.executeUpdate();
+        return update;
     }
 
 

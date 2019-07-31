@@ -32,13 +32,14 @@ public class User extends BaseEntity{
     private String username;
     private Integer status;
 
-
-
     @OneToMany(mappedBy = "CREATED_ID", fetch = FetchType.LAZY)
     private Set<Bug> createdBugs = new HashSet<>();
 
     @OneToMany(mappedBy = "ASSIGNED_ID", fetch = FetchType.LAZY)
     private Set<Bug> assignedBugs = new HashSet<>();
+
+    @OneToMany(mappedBy = "user_id", fetch = FetchType.LAZY)
+    private Set<Comment> comments = new HashSet<>();
 
     public Set<Bug> getCreatedBugs() {
         return createdBugs;
@@ -55,27 +56,6 @@ public class User extends BaseEntity{
     public void setAssignedBugs(Set<Bug> assignedBugs) {
         this.assignedBugs = assignedBugs;
     }
-//    public User(
-//            Integer ID,
-//            Integer counter,
-//            String email,
-//            String firstName,
-//            String lastName,
-//            String mobileNumber,
-//            String password,
-//            String username,
-//            Integer status
-//    ){
-//        this.ID = ID;
-//        this.counter = counter;
-//        this.email = email;
-//        this.firstName = firstName;
-//        this.lastName = lastName;
-//        this.mobileNumber = mobileNumber;
-//        this.password = password;
-//        this.username = username;
-//        this.status = status;
-//    }
 
     public Integer getID() {
         return super.getID();
@@ -184,6 +164,7 @@ public class User extends BaseEntity{
                 ", status=" + status +
                 ", createdBugs=" + createdBugs.toString() +
                 ", assignedBugs=" + assignedBugs.toString() +
+                ", comments=" + comments+
                 '}';
     }
 }

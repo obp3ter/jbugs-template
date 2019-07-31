@@ -3,18 +3,22 @@ package ro.msg.edu.jbugs.model.entity;
 
 import javax.persistence.*;
 import java.sql.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "bugs")
 @NamedQueries({
         @NamedQuery(name = Bug.GET_ALL_BUGS, query = "select b from Bug b"),
         @NamedQuery(name = Bug.GET_BY_CREATED_ID, query = "select b from Bug b where b.CREATED_ID = :user"),
-        @NamedQuery(name = Bug.GET_BY_ASSIGNED_ID, query = "select b from Bug b where b.ASSIGNED_ID = :user")
+        @NamedQuery(name = Bug.GET_BY_ASSIGNED_ID, query = "select b from Bug b where b.ASSIGNED_ID = :user"),
+        @NamedQuery(name = Bug.REMOVE_OLD_BUGS,query = "delete from Bug b where b.targetDate< :expiryDate ")
 })
 public class Bug extends BaseEntity{
     public static final String GET_ALL_BUGS = "get all bugs";
     public static final String GET_BY_CREATED_ID = "get by created id";
     public static final String GET_BY_ASSIGNED_ID = "get by assigned id";
+    public static final String REMOVE_OLD_BUGS = "remove old bugs";
     private String title;
     private String description;
     private String version;
@@ -30,6 +34,9 @@ public class Bug extends BaseEntity{
     @ManyToOne
     @JoinColumn(name = "ASSIGNED_ID", referencedColumnName = "ID")
     private User ASSIGNED_ID;
+
+    @OneToMany(mappedBy = "bug_id", fetch = FetchType.LAZY)
+    private Set<Comment> comments = new HashSet<>();
 
     public Integer getID() {
         return super.getID();
@@ -115,6 +122,14 @@ public class Bug extends BaseEntity{
         this.ASSIGNED_ID = ASSIGNED_ID;
     }
 
+    public Set<Comment> getComments() {
+        return comments;
+    }
+
+    public void setComments(Set<Comment> comments) {
+        this.comments = comments;
+    }
+
     @Override
     public String toString() {
         return "Bug{" +
@@ -128,6 +143,7 @@ public class Bug extends BaseEntity{
                 ", severity='" + severity + '\'' +
                 ", CREATED_ID=" + CREATED_ID +
                 ", ASSIGNED_ID=" + ASSIGNED_ID +
+                ", comments=" + comments+
                 '}';
     }
 }

@@ -42,5 +42,9 @@ public class BugManager {
     {
         return bugMapper.getDTOsFromEntities(bugDao.getByAssignedId(Id));
     }
+    public Integer removeold()
+    {
+        return bugDao.removeOld();
+    }
 
 }
