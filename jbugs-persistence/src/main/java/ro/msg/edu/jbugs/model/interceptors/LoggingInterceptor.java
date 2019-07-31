@@ -1,17 +1,22 @@
 package ro.msg.edu.jbugs.model.interceptors;
 
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import javax.interceptor.AroundInvoke;
 import javax.interceptor.InvocationContext;
 
 public class LoggingInterceptor {
+
+    private static final Logger logger = LogManager.getLogger(LoggingInterceptor.class.getName());
 
     @AroundInvoke
     private Object doLog(InvocationContext ic)
     {
         Object obj = null;
         try{
-            System.out.println("Entering method "+ic.getTarget().toString()+" "+ic.getMethod().getName()+".");
+            logger.info("Entering method "+ic.getTarget().toString()+" "+ic.getMethod().getName()+".");
             obj= ic.proceed();
         }
         catch (Exception e)
@@ -19,7 +24,7 @@ public class LoggingInterceptor {
             System.out.println(e.getMessage());
         }
         finally {
-            System.out.println("Entering method "+ic.getTarget().toString()+" "+ic.getMethod().getName()+".");
+            logger.info("Exiting method "+ic.getTarget().toString()+" "+ic.getMethod().getName()+".");
         }
         return obj;
 

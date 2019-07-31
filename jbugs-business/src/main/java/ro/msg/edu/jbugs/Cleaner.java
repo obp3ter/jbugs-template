@@ -20,12 +20,12 @@ public class Cleaner {
     @EJB
     private CommentDao commentDao;
 
-    @Schedule(minute = "*/1", hour = "*")
+//    @Schedule(minute = "*/1", hour = "*")
     public void clean()
     {
         Integer bugres=bugDao.closeOld();
         Integer commentres=commentDao.removeOld();
-        String message = "Bugs closed: "+ bugres+" \nComments deleted: "+commentres+". ";
-        Email.sendMail("Report", message);
+//        String message = "Bugs closed: "+ bugres+" \nComments deleted: "+commentres+". ";
+//        Email.sendMail("Report", message);
     }
 }
