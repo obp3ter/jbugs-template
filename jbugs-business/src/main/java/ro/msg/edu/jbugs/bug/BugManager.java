@@ -5,12 +5,15 @@ import ro.msg.edu.jbugs.dto.BugDTO;
 import ro.msg.edu.jbugs.dto.BugDTOEntityMapper;
 import ro.msg.edu.jbugs.model.dao.BugDao;
 import ro.msg.edu.jbugs.model.entity.Bug;
+import ro.msg.edu.jbugs.model.interceptors.LoggingInterceptor;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
+import javax.interceptor.Interceptors;
 import java.util.List;
 
 @Stateless
+@Interceptors(LoggingInterceptor.class)
 public class BugManager {
 
     @EJB

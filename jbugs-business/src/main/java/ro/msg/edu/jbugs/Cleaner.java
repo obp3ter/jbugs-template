@@ -4,12 +4,15 @@ import ro.msg.edu.jbugs.Email.Email;
 import ro.msg.edu.jbugs.dto.UserDTO;
 import ro.msg.edu.jbugs.model.dao.BugDao;
 import ro.msg.edu.jbugs.model.dao.CommentDao;
+import ro.msg.edu.jbugs.model.interceptors.LoggingInterceptor;
 
 import javax.ejb.EJB;
 import javax.ejb.Schedule;
 import javax.ejb.Stateless;
+import javax.interceptor.Interceptors;
 
 @Stateless
+@Interceptors(LoggingInterceptor.class)
 public class Cleaner {
 
     @EJB
@@ -20,9 +23,9 @@ public class Cleaner {
     @Schedule(minute = "*/1", hour = "*")
     public void clean()
     {
-        Integer bugres=bugDao.removeOld();
+        Integer bugres=bugDao.closeOld();
         Integer commentres=commentDao.removeOld();
-        String message = "Bugs deleted: "+ bugres+" \nComments deleted: "+commentres+". ";
+        String message = "Bugs closed: "+ bugres+" \nComments deleted: "+commentres+". ";
         Email.sendMail("Report", message);
     }
 }

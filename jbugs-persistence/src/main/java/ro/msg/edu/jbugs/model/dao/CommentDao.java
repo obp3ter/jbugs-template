@@ -1,8 +1,10 @@
 package ro.msg.edu.jbugs.model.dao;
 
 import ro.msg.edu.jbugs.model.entity.Comment;
+import ro.msg.edu.jbugs.model.interceptors.LoggingInterceptor;
 
 import javax.ejb.Stateless;
+import javax.interceptor.Interceptors;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
@@ -11,6 +13,7 @@ import java.util.Calendar;
 import java.util.List;
 
 @Stateless
+@Interceptors(LoggingInterceptor.class)
 public class CommentDao {
 
     @PersistenceContext(unitName = "jbugs-persistence")

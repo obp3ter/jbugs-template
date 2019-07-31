@@ -1,14 +1,17 @@
 package ro.msg.edu.jbugs.model.dao;
 
 import ro.msg.edu.jbugs.model.entity.User;
+import ro.msg.edu.jbugs.model.interceptors.LoggingInterceptor;
 
 import javax.ejb.Schedule;
 import javax.ejb.Stateless;
+import javax.interceptor.Interceptors;
 import javax.persistence.*;
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Stateless
+@Interceptors(LoggingInterceptor.class)
 public class UserDao {
 
     @PersistenceContext(unitName = "jbugs-persistence")

@@ -1,3 +1,4 @@
+ro\msg\edu\jbugs\model\interceptors\LoggingInterceptor.class
 ro\msg\edu\jbugs\model\entity\Bug.class
 ro\msg\edu\jbugs\model\entity\User.class
 ro\msg\edu\jbugs\model\entity\BaseEntity.class

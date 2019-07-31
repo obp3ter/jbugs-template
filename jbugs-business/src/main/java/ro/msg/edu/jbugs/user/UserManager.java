@@ -6,16 +6,18 @@ import ro.msg.edu.jbugs.dto.BugDTO;
 import ro.msg.edu.jbugs.dto.BugDTOEntityMapper;
 import ro.msg.edu.jbugs.dto.UserDTO;
 import ro.msg.edu.jbugs.dto.UserDTOEntityMapper;
+import ro.msg.edu.jbugs.model.interceptors.LoggingInterceptor;
 import ro.msg.edu.jbugs.model.dao.UserDao;
 import ro.msg.edu.jbugs.model.entity.User;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
+import javax.interceptor.Interceptors;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 
 @Stateless
+@Interceptors(LoggingInterceptor.class)
 public class UserManager {
 
     @EJB
@@ -41,7 +43,6 @@ public class UserManager {
         List<User> userList = userDao.findALL();
         return userMapper.getDTOsFromEntities(userList);
     }
-
     public Pair<UserDTO,List<BugDTO>> getCreatedBugs(Integer Id)
     {
        User user = userDao.findUser(Id);
