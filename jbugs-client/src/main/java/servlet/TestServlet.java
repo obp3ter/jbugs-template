@@ -1,5 +1,6 @@
 package servlet;
 
+import javafx.util.Pair;
 import ro.msg.edu.jbugs.bug.BugManager;
 import ro.msg.edu.jbugs.dto.BugDTO;
 import ro.msg.edu.jbugs.dto.UserDTO;
@@ -47,8 +48,11 @@ public class TestServlet extends HttpServlet {
         // Actual logic goes here.
         PrintWriter out = response.getWriter();
         out.println("<h1>" + message + "</h1>");
-        List<BugDTO> bugList = bugManager.getByAssignedId(1);
-        bugList.forEach(s -> out.println(s.toString()));
+        Pair<UserDTO, List<BugDTO>> createdBugs = userManager.getCreatedBugs(1);
+        List<Pair<UserDTO, List<BugDTO>>> createdBugsForAll = userManager.getCreatedBugsForAll();
+        createdBugsForAll.forEach(s->out.println("<p> User " + s.getKey().getFirstName() + " " + s.getKey().getLastName() + " created " + s.getValue().size() + " bugs.</p>"));
+        userManager.getUAB();
+
     }
 
     public void destroy() {

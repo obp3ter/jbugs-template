@@ -1,6 +1,7 @@
 package ro.msg.edu.jbugs.model.entity;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
@@ -10,8 +11,15 @@ import java.util.Set;
 @NamedQueries({
         @NamedQuery(name = User.GET_ALL_USERS, query = "select u from User u")
 })
+@NamedNativeQueries({
+        @NamedNativeQuery(name = User.GET_ASSIGNED_BUGS_NUMBER_FOR_ALL, query = "select u.first_name,u.last_name, count(b.CREATED_ID)" +
+                " as nrbugs from users u inner join bugs b on u.ID=b.CREATED_ID\n" +
+                "group by CREATED_ID")
+
+})
 public class User extends BaseEntity{
     public static final String GET_ALL_USERS = "getAllUsers";
+    public static final String GET_ASSIGNED_BUGS_NUMBER_FOR_ALL = "get assigned bugs # for all";
     private Integer counter;
     private String email;
     @Column(name = "first_name")
@@ -26,11 +34,11 @@ public class User extends BaseEntity{
 
 
 
-    @OneToMany(mappedBy = "CREATED_ID")
-    private Set<Bug> createdBugs;
+    @OneToMany(mappedBy = "CREATED_ID", fetch = FetchType.LAZY)
+    private Set<Bug> createdBugs = new HashSet<>();
 
-    @OneToMany(mappedBy = "ASSIGNED_ID")
-    private Set<Bug> assignedBugs;
+    @OneToMany(mappedBy = "ASSIGNED_ID", fetch = FetchType.LAZY)
+    private Set<Bug> assignedBugs = new HashSet<>();
 
     public Set<Bug> getCreatedBugs() {
         return createdBugs;
