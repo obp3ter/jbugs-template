@@ -1,0 +1,8 @@
+ro\msg\edu\jbugs\dto\UserDTO.class
+ro\msg\edu\jbugs\dto\UserDTOEntityMapper.class
+ro\msg\edu\jbugs\dto\BaseDTO.class
+ro\msg\edu\jbugs\dto\BugDTOEntityMapper.class
+ro\msg\edu\jbugs\dto\BaseDTOEntityMapper.class
+ro\msg\edu\jbugs\bug\BugManager.class
+ro\msg\edu\jbugs\user\UserManager.class
+ro\msg\edu\jbugs\dto\BugDTO.class
