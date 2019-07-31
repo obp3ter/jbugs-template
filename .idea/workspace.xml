@@ -6,186 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d82193b-e990-4e6c-8297-999e01235dfb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-business/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-business/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-business/src/main/java/ro/msg/edu/jbugs/bug/BugManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-business/src/main/java/ro/msg/edu/jbugs/dto/BaseDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-business/src/main/java/ro/msg/edu/jbugs/dto/BaseDTOEntityMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-business/src/main/java/ro/msg/edu/jbugs/dto/BugDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-business/src/main/java/ro/msg/edu/jbugs/dto/BugDTOEntityMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-business/src/main/java/ro/msg/edu/jbugs/dto/UserDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-business/src/main/java/ro/msg/edu/jbugs/dto/UserDTOEntityMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-business/src/main/java/ro/msg/edu/jbugs/user/UserManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-business/src/main/resources/META-INF/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-business/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-business/src/test/resources/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-business/src/test/resources/test-application.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/angular.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/e2e/protractor.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/e2e/src/app.e2e-spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/e2e/src/app.po.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/e2e/tsconfig.e2e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/app.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/app.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/bug-management/bugs-view/bugs-view.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/bug-management/bugs-view/bugs-view.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/bug-management/bugs-view/bugs-view.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/bug-management/bugs-view/bugs-view.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/bug-management/bugs-view/datePickerFormatter.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/bug-management/detail-bug/detail-bug.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/bug-management/detail-bug/detail-bug.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/bug-management/detail-bug/detail-bug.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/bug-management/detail-bug/detail-bug.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/bug-management/edit-bug/edit-bug.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/bug-management/edit-bug/edit-bug.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/bug-management/edit-bug/edit-bug.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/bug-management/edit-bug/edit-bug.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/bug-management/new-bug/new-bug.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/bug-management/new-bug/new-bug.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/bug-management/new-bug/new-bug.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/bug-management/new-bug/new-bug.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/bug-management/services/bug.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/bug-management/services/bug.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/bug-management/services/excel.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/bug-management/services/excel.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/communication/communication.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/communication/communication.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/communication/communication.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/communication/communication.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/error-message/error-message.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/error-message/error-message.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/error-message/error-message.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/error-message/error-message.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/error/error.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/error/error.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/error/error.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/error/error.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/filter.pipe.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/filter.pipe.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/home/home.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/home/home.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/home/home.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/home/home.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/norights/norights.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/norights/norights.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/norights/norights.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/norights/norights.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/notifications/entities/Notification.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/notifications/notification/notification.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/notifications/notification/notification.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/notifications/notification/notification.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/notifications/notification/notification.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/notifications/services/notification.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/notifications/services/notification.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/role-management/entities/permission.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/role-management/entities/role.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/role-management/roles/roles.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/role-management/roles/roles.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/role-management/roles/roles.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/role-management/roles/roles.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/role-management/services/role.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/role-management/services/role.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/shared/util.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/shared/util.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/user-management/guards/authenticated.guard.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/user-management/guards/authenticated.guard.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/user-management/guards/my-http-interceptor.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/user-management/guards/redirect.guard.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/user-management/guards/redirect.guard.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/user-management/login/login.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/user-management/login/login.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/user-management/login/login.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/user-management/login/login.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/user-management/services/user.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/user-management/services/user.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/user-management/users/users.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/user-management/users/users.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/user-management/users/users.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/user-management/users/users.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/user-profile/user-profile.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/user-profile/user-profile.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/user-profile/user-profile.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/app/user-profile/user-profile.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/assets/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/assets/bird-cells.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/assets/bug.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/assets/fonts/Bulgatti.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/assets/fonts/montserrat/Montserrat-Black.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/assets/fonts/montserrat/Montserrat-BlackItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/assets/fonts/montserrat/Montserrat-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/assets/fonts/montserrat/Montserrat-BoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/assets/fonts/montserrat/Montserrat-ExtraBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/assets/fonts/montserrat/Montserrat-ExtraBoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/assets/fonts/montserrat/Montserrat-ExtraLight.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/assets/fonts/montserrat/Montserrat-ExtraLightItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/assets/fonts/montserrat/Montserrat-Italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/assets/fonts/montserrat/Montserrat-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/assets/fonts/montserrat/Montserrat-LightItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/assets/fonts/montserrat/Montserrat-Medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/assets/fonts/montserrat/Montserrat-MediumItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/assets/fonts/montserrat/Montserrat-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/assets/fonts/montserrat/Montserrat-SemiBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/assets/fonts/montserrat/Montserrat-SemiBoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/assets/fonts/montserrat/Montserrat-Thin.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/assets/fonts/montserrat/Montserrat-ThinItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/assets/fonts/montserrat/OFL.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/assets/i18n/en.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/assets/i18n/ro.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/assets/loginlogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/assets/msglogo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/assets/notificationsound.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/assets/odffile.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/assets/romaniaFlag.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/assets/usFlag.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/browserslist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/environments/environment.prod.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/environments/environment.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/polyfills.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/tsconfig.spec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/src/tslint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/client/tslint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/java/servlet/TestServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-ear/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-ear/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-persistence/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-persistence/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-persistence/src/main/java/ro/msg/edu/jbugs/model/dao/BugDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-persistence/src/main/java/ro/msg/edu/jbugs/model/dao/UserDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-persistence/src/main/java/ro/msg/edu/jbugs/model/entity/BaseEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-persistence/src/main/java/ro/msg/edu/jbugs/model/entity/Bug.java" beforeDir="false" />
+    <list default="true" id="5d82193b-e990-4e6c-8297-999e01235dfb" name="Default Changelist" comment="Revert &quot;Initial commit&quot;&#10;&#10;This reverts commit 37fa80ea8b0683a0243cb098a9f034249bd78833.&#10;&#10;# Conflicts:&#10;#&#9;jbugs-persistence/src/main/java/ro/msg/edu/jbugs/model/entity/User.java">
+      <change beforePath="$PROJECT_DIR$/jbugs-business/src/main/java/ro/msg/edu/jbugs/user/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/jbugs-business/src/main/java/ro/msg/edu/jbugs/user/UserManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jbugs-client/src/main/java/servlet/TestServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/jbugs-client/src/main/java/servlet/TestServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jbugs-persistence/src/main/java/ro/msg/edu/jbugs/model/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jbugs-persistence/src/main/java/ro/msg/edu/jbugs/model/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jbugs-persistence/src/main/java/ro/msg/edu/jbugs/model/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/jbugs-persistence/src/main/java/ro/msg/edu/jbugs/model/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-persistence/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbugs-persistence/src/main/resources/log4j2-test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sonar-project.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/BugMgmt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/BugTracker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/ExampleLocalBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/ExampleNoAnnotation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/SomeEjb.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/jbugs-persistence/target/" />
@@ -244,15 +69,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jbugs-persistence/src/main/java/ro/msg/edu/jbugs/model/entity/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+            <state relative-caret-position="260">
+              <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="e#0#20#1" expanded="true" />
-                <element signature="e#1864#1865#0" expanded="true" />
-                <element signature="e#1900#1901#0" expanded="true" />
-                <element signature="e#1937#1938#0" expanded="true" />
-                <element signature="e#1968#1969#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -304,6 +124,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="obp3ter &lt;15703843+obp3ter@users.noreply.github.com&gt;" />
         <option value="Peter Oprea-Benko &lt;15703843+obp3ter@users.noreply.github.com&gt;" />
       </list>
     </option>
@@ -328,10 +149,10 @@
         <option value="$PROJECT_DIR$/jbugs-persistence/src/main/java/ro/msg/edu/jbugs/model/entity/Bug.java" />
         <option value="$PROJECT_DIR$/jbugs-business/src/main/java/ro/msg/edu/jbugs/bug/BugManager.java" />
         <option value="$PROJECT_DIR$/jbugs-business/src/main/java/ro/msg/edu/jbugs/dto/BugDTOEntityMapper.java" />
-        <option value="$PROJECT_DIR$/jbugs-persistence/src/main/java/ro/msg/edu/jbugs/model/entity/User.java" />
         <option value="$PROJECT_DIR$/jbugs-business/src/main/java/ro/msg/edu/jbugs/user/UserManager.java" />
         <option value="$PROJECT_DIR$/jbugs-client/src/main/java/servlet/TestServlet.java" />
         <option value="$PROJECT_DIR$/jbugs-persistence/src/main/java/ro/msg/edu/jbugs/model/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/jbugs-persistence/src/main/java/ro/msg/edu/jbugs/model/entity/User.java" />
       </list>
     </option>
   </component>
@@ -382,7 +203,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -400,6 +220,21 @@
               <item name="project_template" type="462c0819:PsiDirectoryNode" />
               <item name="jbugs-business" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jbugs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project_template" type="462c0819:PsiDirectoryNode" />
+              <item name="jbugs-business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jbugs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project_template" type="462c0819:PsiDirectoryNode" />
+              <item name="jbugs-business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jbugs" type="b2602c69:ProjectViewProjectNode" />
@@ -462,11 +297,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
@@ -717,6 +554,9 @@
       <workItem from="1564144895249" duration="2518000" />
       <workItem from="1564397309485" duration="8852000" />
       <workItem from="1564475958436" duration="11770000" />
+      <workItem from="1564558603297" duration="592000" />
+      <workItem from="1564559322453" duration="34000" />
+      <workItem from="1564559439841" duration="31000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1564476367704</created>
@@ -732,7 +572,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564557511506</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Revert &quot;Initial commit&quot;&#10;&#10;This reverts commit 37fa80ea8b0683a0243cb098a9f034249bd78833.&#10;&#10;# Conflicts:&#10;#&#9;jbugs-persistence/src/main/java/ro/msg/edu/jbugs/model/entity/User.java">
+      <created>1564558698367</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1564558698367</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -744,7 +591,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52820000" />
+    <option name="totallyTimeSpent" value="53477000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -757,13 +604,13 @@
       <window_info id="JavaEE:App" order="5" side_tool="true" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info id="Designer" order="7" />
-      <window_info content_ui="combo" id="Project" order="8" sideWeight="0.49948078" visible="true" weight="0.32462686" />
+      <window_info content_ui="combo" id="Project" order="8" sideWeight="0.49948078" visible="true" weight="0.33582088" />
       <window_info id="Structure" order="9" side_tool="true" weight="0.25" />
       <window_info id="Persistence" order="10" sideWeight="0.5005192" side_tool="true" weight="0.32462686" />
       <window_info anchor="bottom" id="TypeScript" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49946696" visible="true" weight="0.32917964" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" sideWeight="0.4978678" visible="true" weight="0.32917964" />
       <window_info anchor="bottom" id="Docker" order="2" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="3" sideWeight="0.50053304" side_tool="true" visible="true" weight="0.32917964" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5021322" side_tool="true" visible="true" weight="0.32917964" />
       <window_info anchor="bottom" id="Messages" order="4" weight="0.32917964" />
       <window_info anchor="bottom" id="Java Enterprise" order="5" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Changes" order="6" />
@@ -839,7 +686,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init" />
     <MESSAGE value="Init2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init2" />
+    <MESSAGE value="Revert &quot;Initial commit&quot;&#10;&#10;This reverts commit 37fa80ea8b0683a0243cb098a9f034249bd78833.&#10;&#10;# Conflicts:&#10;#&#9;jbugs-persistence/src/main/java/ro/msg/edu/jbugs/model/entity/User.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;Initial commit&quot;&#10;&#10;This reverts commit 37fa80ea8b0683a0243cb098a9f034249bd78833.&#10;&#10;# Conflicts:&#10;#&#9;jbugs-persistence/src/main/java/ro/msg/edu/jbugs/model/entity/User.java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -877,94 +725,23 @@
     <entry file="file://$PROJECT_DIR$/jbugs-client/src/main/java/resources/Authorization.java" />
     <entry file="file://$PROJECT_DIR$/jbugs-persistence/src/main/resources/META-INF/loadTestdata.sql" />
     <entry file="file://$PROJECT_DIR$/jbugs-client/src/main/java/TestServlet.java" />
-    <entry file="file://$PROJECT_DIR$/jbugs-business/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/jbugs-business/src/main/resources/META-INF/persistence.xml" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9f0dcca9-b1e3-4095-ba96-f5e9c40d8e48/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/jbugs-persistence/src/main/java/ro/msg/edu/jbugs/model/UserRepository.java" />
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jbugs-persistence/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="110" selection-start-line="11" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sonar-project.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml" />
+    <entry file="file://$PROJECT_DIR$/jbugs-persistence/src/main/resources/META-INF/persistence.xml" />
+    <entry file="file://$PROJECT_DIR$/sonar-project.properties" />
     <entry file="file://$PROJECT_DIR$/jbugs-persistence/jbugs-persistence.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/jbugs-persistence/src/main/java/ro/msg/edu/jbugs/model/entity/Byugs.java" />
-    <entry file="file://$PROJECT_DIR$/jbugs-business/src/main/java/ro/msg/edu/jbugs/dto/BaseDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-          <folding>
-            <element signature="e#81#82#0" expanded="true" />
-            <element signature="e#106#107#0" expanded="true" />
-            <element signature="e#143#144#0" expanded="true" />
-            <element signature="e#171#172#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jbugs-persistence/src/main/java/ro/msg/edu/jbugs/model/entity/BaseEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#363#364#0" expanded="true" />
-            <element signature="e#388#389#0" expanded="true" />
-            <element signature="e#425#426#0" expanded="true" />
-            <element signature="e#453#454#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jbugs-business/src/main/java/ro/msg/edu/jbugs/dto/UserDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="43" selection-start-line="43" selection-end-line="49" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1086#1087#0" expanded="true" />
-            <element signature="e#1118#1119#0" expanded="true" />
-            <element signature="e#1523#1524#0" expanded="true" />
-            <element signature="e#1554#1555#0" expanded="true" />
-            <element signature="e#1855#1856#0" expanded="true" />
-            <element signature="e#1886#1887#0" expanded="true" />
-            <element signature="e#2009#2010#0" expanded="true" />
-            <element signature="e#2040#2041#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/jbugs-business/src/main/java/ro/msg/edu/jbugs/dto/BaseDTO.java" />
+    <entry file="file://$PROJECT_DIR$/jbugs-persistence/src/main/java/ro/msg/edu/jbugs/model/entity/BaseEntity.java" />
+    <entry file="file://$PROJECT_DIR$/jbugs-business/src/main/java/ro/msg/edu/jbugs/dto/UserDTO.java" />
     <entry file="file://$PROJECT_DIR$/jbugs-business/src/main/java/ro/msg/edu/jbugs/user/BugManager.java" />
-    <entry file="file://$PROJECT_DIR$/jbugs-business/src/main/java/ro/msg/edu/jbugs/dto/BugDTOEntityMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/jbugs-business/src/main/java/ro/msg/edu/jbugs/dto/BugDTOEntityMapper.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/jre/lib/rt.jar!/sun/misc/Unsafe.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -972,132 +749,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jbugs-business/src/main/java/ro/msg/edu/jbugs/dto/UserDTOEntityMapper.java">
+    <entry file="file://$PROJECT_DIR$/jbugs-business/src/main/java/ro/msg/edu/jbugs/dto/UserDTOEntityMapper.java" />
+    <entry file="file://$PROJECT_DIR$/jbugs-business/src/main/java/ro/msg/edu/jbugs/dto/BaseDTOEntityMapper.java" />
+    <entry file="file://$PROJECT_DIR$/jbugs-persistence/src/main/java/ro/msg/edu/jbugs/model/dao/BugDao.java" />
+    <entry file="file://$PROJECT_DIR$/jbugs-business/src/main/java/ro/msg/edu/jbugs/dto/BugDTO.java" />
+    <entry file="file://$PROJECT_DIR$/jbugs-business/src/main/java/ro/msg/edu/jbugs/bug/BugManager.java" />
+    <entry file="file://$PROJECT_DIR$/jbugs-business/src/main/java/ro/msg/edu/jbugs/user/UserManager.java" />
+    <entry file="file://$PROJECT_DIR$/jbugs-client/src/main/java/servlet/TestServlet.java" />
+    <entry file="file://$PROJECT_DIR$/jbugs-persistence/src/main/java/ro/msg/edu/jbugs/model/dao/UserDao.java" />
+    <entry file="file://$PROJECT_DIR$/jbugs-persistence/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/jbugs-ear/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/jbugs-persistence/src/main/java/ro/msg/edu/jbugs/model/entity/Bug.java" />
+    <entry file="file://$PROJECT_DIR$/jbugs-persistence/src/main/java/ro/msg/edu/jbugs/model/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="260">
+          <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#20#1" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jbugs-business/src/main/java/ro/msg/edu/jbugs/dto/BaseDTOEntityMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jbugs-persistence/src/main/java/ro/msg/edu/jbugs/model/dao/BugDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="50" column="78" selection-start-line="50" selection-start-column="78" selection-end-line="50" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jbugs-business/src/main/java/ro/msg/edu/jbugs/dto/BugDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jbugs-business/src/main/java/ro/msg/edu/jbugs/bug/BugManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jbugs-business/src/main/java/ro/msg/edu/jbugs/user/UserManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1695#1696#0" expanded="true" />
-            <element signature="e#1717#1718#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jbugs-client/src/main/java/servlet/TestServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="52" column="173" lean-forward="true" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="173" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jbugs-persistence/src/main/java/ro/msg/edu/jbugs/model/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="38" column="92" selection-start-line="38" selection-start-column="92" selection-end-line="38" selection-end-column="92" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jbugs-persistence/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2827">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jbugs-ear/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/jbugs-ear/target/application.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jbugs-persistence/src/main/java/ro/msg/edu/jbugs/model/entity/Bug.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#0#19#1" expanded="true" />
-            <element signature="e#0#46#1" expanded="true" />
-            <element signature="e#0#47#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jbugs-persistence/src/main/java/ro/msg/edu/jbugs/model/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#0#20#1" expanded="true" />
-            <element signature="e#1864#1865#0" expanded="true" />
-            <element signature="e#1900#1901#0" expanded="true" />
-            <element signature="e#1937#1938#0" expanded="true" />
-            <element signature="e#1968#1969#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
   </component>
   <component name="masterDetails">
