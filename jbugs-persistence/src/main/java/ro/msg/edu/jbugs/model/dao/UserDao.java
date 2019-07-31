@@ -31,7 +31,7 @@ public class UserDao {
         List resultList = query.getResultList();
         return resultList;
     }
-    @Schedule(minute = "*/1", hour = "*")
+    //@Schedule(minute = "*/1", hour = "*")
     public void getUAB()
     {
         Query namedQuery= entityManager.createNamedQuery(User.GET_ASSIGNED_BUGS_NUMBER_FOR_ALL);
