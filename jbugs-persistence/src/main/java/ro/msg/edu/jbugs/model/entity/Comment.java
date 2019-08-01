@@ -17,11 +17,11 @@ public class Comment extends BaseEntity{
 
     @ManyToOne
     @JoinColumn(name = "user_id", referencedColumnName = "ID")
-    User user_id;
+    private User user;
 
     @ManyToOne
     @JoinColumn(name = "bug_id", referencedColumnName = "ID")
-    Bug bug_id;
+    private Bug bug;
 
     public Integer getID() {
         return super.getID();
@@ -47,20 +47,20 @@ public class Comment extends BaseEntity{
         this.date = date;
     }
 
-    public User getUser_id() {
-        return user_id;
+    public User getUser() {
+        return user;
     }
 
-    public void setUser_id(User user_id) {
-        this.user_id = user_id;
+    public void setUser(User user_id) {
+        this.user = user_id;
     }
 
-    public Bug getBug_id() {
-        return bug_id;
+    public Bug getBug() {
+        return bug;
     }
 
-    public void setBug_id(Bug bug_id) {
-        this.bug_id = bug_id;
+    public void setBug(Bug bug_id) {
+        this.bug = bug_id;
     }
 
     @Override
@@ -69,8 +69,8 @@ public class Comment extends BaseEntity{
                 "ID=" + super.getID() +
                 ", text='" + text + '\'' +
                 ", date=" + date +
-                ", user_id=" + user_id +
-                ", bug_id=" + bug_id +
+                ", user_id=" + user +
+                ", bug_id=" + bug +
                 '}';
     }
 }

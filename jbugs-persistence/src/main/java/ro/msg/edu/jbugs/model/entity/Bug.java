@@ -37,8 +37,19 @@ public class Bug extends BaseEntity{
     @JoinColumn(name = "ASSIGNED_ID", referencedColumnName = "ID")
     private User ASSIGNED_ID;
 
-    @OneToMany(mappedBy = "bug_id", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "bug", fetch = FetchType.LAZY)
     private Set<Comment> comments = new HashSet<>();
+
+    @OneToMany(mappedBy = "id_bug", fetch = FetchType.LAZY)
+    private Set<Attachment> attachments = new HashSet<>();
+
+    public Set<Attachment> getAttachments() {
+        return attachments;
+    }
+
+    public void setAttachments(Set<Attachment> attachments) {
+        this.attachments = attachments;
+    }
 
     public Integer getID() {
         return super.getID();
@@ -145,7 +156,8 @@ public class Bug extends BaseEntity{
                 ", severity='" + severity + '\'' +
                 ", CREATED_ID=" + CREATED_ID +
                 ", ASSIGNED_ID=" + ASSIGNED_ID +
-                ", comments=" + comments+
+                ", comments=" + comments +
+                ", attachments= "+ attachments +
                 '}';
     }
 }

@@ -1,6 +1,8 @@
 package ro.msg.edu.jbugs.dto;
 
-public class BaseDTO {
+import java.io.Serializable;
+
+public class BaseDTO implements Serializable {
 
     private Integer ID;
 

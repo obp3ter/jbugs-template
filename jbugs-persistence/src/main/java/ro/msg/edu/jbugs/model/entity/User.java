@@ -38,8 +38,15 @@ public class User extends BaseEntity{
     @OneToMany(mappedBy = "ASSIGNED_ID", fetch = FetchType.LAZY)
     private Set<Bug> assignedBugs = new HashSet<>();
 
-    @OneToMany(mappedBy = "user_id", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
     private Set<Comment> comments = new HashSet<>();
+
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+    private Set<Notification> notifications =new HashSet<>();
+
+    @ManyToMany(mappedBy = "users", fetch = FetchType.LAZY)
+    private Set<Role> roles = new HashSet<>();
+
 
     public Set<Bug> getCreatedBugs() {
         return createdBugs;
@@ -129,25 +136,28 @@ public class User extends BaseEntity{
         this.status = status;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof User)) return false;
-        User user = (User) o;
-        return getID().equals(user.getID()) &&
-                Objects.equals(getCounter(), user.getCounter()) &&
-                getEmail().equals(user.getEmail()) &&
-                getFirstName().equals(user.getFirstName()) &&
-                getLastName().equals(user.getLastName()) &&
-                getMobileNumber().equals(user.getMobileNumber()) &&
-                getPassword().equals(user.getPassword()) &&
-                getUsername().equals(user.getUsername()) &&
-                getStatus().equals(user.getStatus());
+    public Set<Comment> getComments() {
+        return comments;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(getID(), getCounter(), getEmail(), getFirstName(), getLastName(), getMobileNumber(), getPassword(), getUsername(), getStatus());
+    public void setComments(Set<Comment> comments) {
+        this.comments = comments;
+    }
+
+    public Set<Notification> getNotifications() {
+        return notifications;
+    }
+
+    public void setNotifications(Set<Notification> notifications) {
+        this.notifications = notifications;
+    }
+
+    public Set<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(Set<Role> roles) {
+        this.roles = roles;
     }
 
     @Override
@@ -162,9 +172,11 @@ public class User extends BaseEntity{
                 ", password='" + password + '\'' +
                 ", username='" + username + '\'' +
                 ", status=" + status +
-                ", createdBugs=" + createdBugs.toString() +
-                ", assignedBugs=" + assignedBugs.toString() +
-                ", comments=" + comments+
+                ", createdBugs=" + createdBugs +
+                ", assignedBugs=" + assignedBugs +
+                ", comments=" + comments +
+                ", notifications=" + notifications +
+                ", roles=" + roles +
                 '}';
     }
 }

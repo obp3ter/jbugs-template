@@ -1,11 +1,14 @@
 ro\msg\edu\jbugs\dto\BaseDTO.class
 ro\msg\edu\jbugs\Email\Email$1.class
+ro\msg\edu\jbugs\manager\UserManagerImpl.class
+ro\msg\edu\jbugs\manager\BugManagerImpl.class
 ro\msg\edu\jbugs\dto\UserDTO.class
 ro\msg\edu\jbugs\dto\UserDTOEntityMapper.class
+ro\msg\edu\jbugs\manager\BaseManager.class
 ro\msg\edu\jbugs\dto\BugDTOEntityMapper.class
 ro\msg\edu\jbugs\Cleaner.class
 ro\msg\edu\jbugs\dto\BaseDTOEntityMapper.class
-ro\msg\edu\jbugs\bug\BugManager.class
-ro\msg\edu\jbugs\user\UserManager.class
 ro\msg\edu\jbugs\dto\BugDTO.class
 ro\msg\edu\jbugs\Email\Email.class
+ro\msg\edu\jbugs\manager\BugManager.class
+ro\msg\edu\jbugs\manager\UserManager.class

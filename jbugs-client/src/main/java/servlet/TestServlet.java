@@ -1,12 +1,9 @@
 package servlet;
 
-import javafx.util.Pair;
 import ro.msg.edu.jbugs.Cleaner;
-import ro.msg.edu.jbugs.Email.Email;
-import ro.msg.edu.jbugs.bug.BugManager;
-import ro.msg.edu.jbugs.dto.BugDTO;
+import ro.msg.edu.jbugs.manager.BugManager;
 import ro.msg.edu.jbugs.dto.UserDTO;
-import ro.msg.edu.jbugs.user.UserManager;
+import ro.msg.edu.jbugs.manager.UserManager;
 
 import javax.ejb.EJB;
 import javax.servlet.ServletException;
@@ -16,7 +13,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.List;
 
 @WebServlet("/test")
 public class TestServlet extends HttpServlet {
@@ -54,10 +50,8 @@ public class TestServlet extends HttpServlet {
         out.println("<h1>" + message + "</h1>");
         //Email.sendMail("TestMail","It works.");
         //cleaner.clean();
-        Pair<UserDTO, List<BugDTO>> createdBugs = userManager.getCreatedBugs(1);
-        List<Pair<UserDTO, List<BugDTO>>> createdBugsForAll = userManager.getCreatedBugsForAll();
-        createdBugsForAll.forEach(s->out.println("<p> User " + s.getKey().getFirstName() + " " + s.getKey().getLastName() + " created " + s.getValue().size() + " bugs.</p>"));
-        userManager.getUAB();
+        out.println(userManager.find(1).toString());
+        userManager.findAll().forEach(s-> out.println(s));
 
     }
 
