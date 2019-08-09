@@ -1,12 +1,14 @@
-package ro.msg.edu.jbugs.dto;
+package ro.msg.edu.jbugs.dto.mapper;
 
+import ro.msg.edu.jbugs.dto.dto.BaseDTO;
+import ro.msg.edu.jbugs.dto.dto.BaseDTOComplete;
 import ro.msg.edu.jbugs.model.entity.BaseEntity;
 
 import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public abstract class BaseDTOEntityMapper<T extends BaseEntity, X extends BaseDTO> {
+public abstract class BaseDTOEntityMapper<T extends BaseEntity, X extends BaseDTO, XC extends BaseDTOComplete> {
     public abstract T getEntityFromDTO(X dto);
     public abstract X getDTOFromEntity(T entity);
 

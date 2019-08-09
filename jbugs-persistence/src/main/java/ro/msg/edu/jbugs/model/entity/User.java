@@ -1,6 +1,9 @@
 package ro.msg.edu.jbugs.model.entity;
 
+import javax.inject.Named;
 import javax.persistence.*;
+import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
@@ -9,7 +12,10 @@ import java.util.Set;
 @Entity
 @Table(name = "users")
 @NamedQueries({
-        @NamedQuery(name = User.GET_ALL_USERS, query = "select u from User u")
+        @NamedQuery(name = User.GET_ALL_USERS, query = "select u from User u"),
+        @NamedQuery(name = User.IS_USERNAME_UNIQUE, query = "select count(u) from User u where u.username = :username"),
+        @NamedQuery(name = User.LOGIN_USER,query = " select u from User u where u.username = :username and u.password=:password and u.status=1"),
+        @NamedQuery(name = User.GET_USER_BY_USERNAME, query = " select u from User u where u.username= :username")
 })
 @NamedNativeQueries({
         @NamedNativeQuery(name = User.GET_ASSIGNED_BUGS_NUMBER_FOR_ALL, query = "select u.first_name,u.last_name, count(b.CREATED_ID)" +
@@ -20,6 +26,9 @@ import java.util.Set;
 public class User extends BaseEntity{
     public static final String GET_ALL_USERS = "getAllUsers";
     public static final String GET_ASSIGNED_BUGS_NUMBER_FOR_ALL = "get assigned bugs # for all";
+    public static final String IS_USERNAME_UNIQUE = "is username unique";
+    public static final String LOGIN_USER = "login user";
+    public static final String GET_USER_BY_USERNAME = "get user by username";
     private Integer counter;
     private String email;
     @Column(name = "first_name")
@@ -41,7 +50,7 @@ public class User extends BaseEntity{
     @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
     private Set<Comment> comments = new HashSet<>();
 
-    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "user", fetch = FetchType.LAZY, orphanRemoval = true)
     private Set<Notification> notifications =new HashSet<>();
 
     @ManyToMany(mappedBy = "users", fetch = FetchType.LAZY)
@@ -158,6 +167,14 @@ public class User extends BaseEntity{
 
     public void setRoles(Set<Role> roles) {
         this.roles = roles;
+    }
+
+
+    public  void addNotification(Notification notification, Boolean addToNotification)
+    {
+        if(addToNotification)
+            notification.setUser(this,false);
+        this.notifications.add(notification);
     }
 
     @Override

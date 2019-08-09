@@ -12,16 +12,16 @@ public class LoggingInterceptor {
     private static final Logger logger = LogManager.getLogger(LoggingInterceptor.class.getName());
 
     @AroundInvoke
-    private Object doLog(InvocationContext ic)
-    {
+    private Object doLog(InvocationContext ic) throws Exception {
         Object obj = null;
         try{
             logger.info("Entering method "+ic.getTarget().toString()+" "+ic.getMethod().getName()+".");
             obj= ic.proceed();
         }
-        catch (Exception e)
+         catch (Exception e)
         {
             System.out.println(e.getMessage());
+            throw e;
         }
         finally {
             logger.info("Exiting method "+ic.getTarget().toString()+" "+ic.getMethod().getName()+".");

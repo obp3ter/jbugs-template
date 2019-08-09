@@ -1,7 +1,10 @@
 package ro.msg.edu.jbugs.model.entity;
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
+
 import javax.persistence.*;
 import java.sql.Date;
+import java.sql.Timestamp;
 
 @Entity
 @Table(name = "notifications")
@@ -10,7 +13,7 @@ import java.sql.Date;
 })
 public class Notification extends BaseEntity{
     public static final String GET_ALL_NOTIFICATIONS = "get all notifications";
-    private Date date;
+    private Timestamp date;
     private String message;
     private String type;
     private String url;
@@ -27,11 +30,11 @@ public class Notification extends BaseEntity{
     }
 
 
-    public Date getDate() {
+    public Timestamp getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(Timestamp date) {
         this.date = date;
     }
 
@@ -63,9 +66,11 @@ public class Notification extends BaseEntity{
         return user;
     }
 
-    public void setUser(User user) {
+    public void setUser(User user, Boolean addToUser) {
+        if(addToUser)
+            user.addNotification(this,false);
         this.user = user;
-    }
+        }
 
     @Override
     public String toString() {

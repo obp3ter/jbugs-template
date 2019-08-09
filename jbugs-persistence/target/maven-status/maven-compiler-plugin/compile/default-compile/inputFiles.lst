@@ -1,6 +1,7 @@
 C:\Training\50_WORKSPACES\Training_Workspace\jbugs-template\jbugs-persistence\src\main\java\ro\msg\edu\jbugs\model\dao\CommentDaoImpl.java
 C:\Training\50_WORKSPACES\Training_Workspace\jbugs-template\jbugs-persistence\src\main\java\ro\msg\edu\jbugs\model\dao\UserDao.java
 C:\Training\50_WORKSPACES\Training_Workspace\jbugs-template\jbugs-persistence\src\main\java\ro\msg\edu\jbugs\model\entity\Attachment.java
+C:\Training\50_WORKSPACES\Training_Workspace\jbugs-template\jbugs-persistence\src\main\java\ro\msg\edu\jbugs\model\interceptors\NotificationType.java
 C:\Training\50_WORKSPACES\Training_Workspace\jbugs-template\jbugs-persistence\src\main\java\ro\msg\edu\jbugs\model\dao\BaseDao.java
 C:\Training\50_WORKSPACES\Training_Workspace\jbugs-template\jbugs-persistence\src\main\java\ro\msg\edu\jbugs\model\dao\CommentDao.java
 C:\Training\50_WORKSPACES\Training_Workspace\jbugs-template\jbugs-persistence\src\main\java\ro\msg\edu\jbugs\model\interceptors\LoggingInterceptor.java
@@ -8,9 +9,13 @@ C:\Training\50_WORKSPACES\Training_Workspace\jbugs-template\jbugs-persistence\sr
 C:\Training\50_WORKSPACES\Training_Workspace\jbugs-template\jbugs-persistence\src\main\java\ro\msg\edu\jbugs\model\entity\Comment.java
 C:\Training\50_WORKSPACES\Training_Workspace\jbugs-template\jbugs-persistence\src\main\java\ro\msg\edu\jbugs\model\entity\Bug.java
 C:\Training\50_WORKSPACES\Training_Workspace\jbugs-template\jbugs-persistence\src\main\java\ro\msg\edu\jbugs\model\entity\Permission.java
+C:\Training\50_WORKSPACES\Training_Workspace\jbugs-template\jbugs-persistence\src\main\java\ro\msg\edu\jbugs\model\dao\NotificationDao.java
+C:\Training\50_WORKSPACES\Training_Workspace\jbugs-template\jbugs-persistence\src\main\java\ro\msg\edu\jbugs\model\dao\NotificationDaoImpl.java
+C:\Training\50_WORKSPACES\Training_Workspace\jbugs-template\jbugs-persistence\src\main\java\ro\msg\edu\jbugs\model\interceptors\WelcomeNotificationInterceptor.java
 C:\Training\50_WORKSPACES\Training_Workspace\jbugs-template\jbugs-persistence\src\main\java\ro\msg\edu\jbugs\model\entity\BaseEntity.java
 C:\Training\50_WORKSPACES\Training_Workspace\jbugs-template\jbugs-persistence\src\main\java\ro\msg\edu\jbugs\model\dao\BugDaoImpl.java
 C:\Training\50_WORKSPACES\Training_Workspace\jbugs-template\jbugs-persistence\src\main\java\ro\msg\edu\jbugs\model\entity\User.java
 C:\Training\50_WORKSPACES\Training_Workspace\jbugs-template\jbugs-persistence\src\main\java\ro\msg\edu\jbugs\model\dao\UserDaoImpl.java
 C:\Training\50_WORKSPACES\Training_Workspace\jbugs-template\jbugs-persistence\src\main\java\ro\msg\edu\jbugs\model\entity\Role.java
+C:\Training\50_WORKSPACES\Training_Workspace\jbugs-template\jbugs-persistence\src\main\java\ro\msg\edu\jbugs\model\exception\BusinessException.java
 C:\Training\50_WORKSPACES\Training_Workspace\jbugs-template\jbugs-persistence\src\main\java\ro\msg\edu\jbugs\model\entity\Notification.java

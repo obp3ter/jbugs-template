@@ -2,8 +2,10 @@ package servlet;
 
 import ro.msg.edu.jbugs.Cleaner;
 import ro.msg.edu.jbugs.manager.BugManager;
-import ro.msg.edu.jbugs.dto.UserDTO;
+import ro.msg.edu.jbugs.dto.dto.UserDTO;
+import ro.msg.edu.jbugs.manager.NotificationManager;
 import ro.msg.edu.jbugs.manager.UserManager;
+import ro.msg.edu.jbugs.model.exception.BusinessException;
 
 import javax.ejb.EJB;
 import javax.servlet.ServletException;
@@ -23,6 +25,8 @@ public class TestServlet extends HttpServlet {
     private UserManager userManager;
     @EJB
     private BugManager bugManager;
+    @EJB
+    private NotificationManager notificationManager;
     @EJB
     private Cleaner cleaner;
 
@@ -48,10 +52,51 @@ public class TestServlet extends HttpServlet {
         // Actual logic goes here.
         PrintWriter out = response.getWriter();
         out.println("<h1>" + message + "</h1>");
-        //Email.sendMail("TestMail","It works.");
-        //cleaner.clean();
-        out.println(userManager.find(1).toString());
-        userManager.findAll().forEach(s-> out.println(s));
+        for (int i = 0; i < 5; i++) {
+            userManager.insert(userDTO);
+        }
+        userManager.findAll().forEach(s-> out.println("<p>"+s+"</p>"));
+        /*
+        TODO:   try wrong pass
+                try deactivated user
+                try no such user
+         */
+
+        try {
+            out.println(userManager.login("testlte","testp").toString());
+        } catch (BusinessException e) {
+            out.println("<p>"+e.getMessage()+"</p>");
+        }
+        try {
+            out.println(userManager.login("testle","testp").toString());
+        } catch (BusinessException e) {
+            out.println("<p>"+e.getMessage()+"</p>");
+        }
+        for (int i = 0; i < 3; i++) {
+            try {
+                out.println(userManager.login("testlte","tesp").toString());
+            } catch (BusinessException e) {
+                out.println("<p>"+e.getMessage()+"</p>");
+            }
+        }
+        try {
+            out.println(userManager.login("testlte","testp").toString());
+        } catch (BusinessException e) {
+            out.println("<p>"+e.getMessage()+"</p>");
+        }
+        for (int i = 0; i < 5; i++) {
+            try {
+                out.println(userManager.login("testlte","tesp").toString());
+            } catch (BusinessException e) {
+                out.println("<p>"+e.getMessage()+"</p>");
+            }
+        }
+        try {
+            out.println(userManager.login("testlte","testp").toString());
+        } catch (BusinessException e) {
+            out.println("<p>"+e.getMessage()+"</p>");
+        }
+
 
     }
 

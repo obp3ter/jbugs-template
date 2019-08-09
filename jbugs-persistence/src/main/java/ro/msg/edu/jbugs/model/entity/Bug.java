@@ -2,7 +2,7 @@ package ro.msg.edu.jbugs.model.entity;
 
 
 import javax.persistence.*;
-import java.sql.Date;
+import java.sql.Timestamp;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -24,7 +24,7 @@ public class Bug extends BaseEntity{
     private String title;
     private String description;
     private String version;
-    private Date targetDate;
+    private Timestamp targetDate;
     private String status;
     private String fixedVersion;
     private String severity;
@@ -87,11 +87,11 @@ public class Bug extends BaseEntity{
         this.version = version;
     }
 
-    public Date getTargetDate() {
+    public Timestamp getTargetDate() {
         return targetDate;
     }
 
-    public void setTargetDate(Date targetDate) {
+    public void setTargetDate(Timestamp targetDate) {
         this.targetDate = targetDate;
     }
 

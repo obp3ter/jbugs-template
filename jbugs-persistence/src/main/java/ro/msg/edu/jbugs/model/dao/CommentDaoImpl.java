@@ -38,6 +38,13 @@ public class CommentDaoImpl implements CommentDao {
         List resultList = query.getResultList();
         return resultList;
     }
+
+    @Override
+    public void remove(Comment entity) {
+        entityManager.remove(entity);
+        entityManager.flush();
+    }
+
     @Override
     public Integer removeOld()
     {

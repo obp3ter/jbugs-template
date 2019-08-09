@@ -1,11 +1,13 @@
-package ro.msg.edu.jbugs.dto;
+package ro.msg.edu.jbugs.dto.mapper;
 
+import ro.msg.edu.jbugs.dto.dto.BaseDTOComplete;
+import ro.msg.edu.jbugs.dto.dto.UserDTO;
 import ro.msg.edu.jbugs.model.entity.User;
 
 import javax.ejb.Singleton;
 
 @Singleton
-public class UserDTOEntityMapper extends BaseDTOEntityMapper<User,UserDTO> {
+public class UserDTOEntityMapper extends BaseDTOEntityMapper<User, UserDTO, BaseDTOComplete> {
 
     @Override
     public User getEntityFromDTO(UserDTO userDTO)

@@ -1,7 +1,6 @@
 package ro.msg.edu.jbugs.manager;
 
-import ro.msg.edu.jbugs.dto.BaseDTO;
-import ro.msg.edu.jbugs.model.entity.BaseEntity;
+import ro.msg.edu.jbugs.dto.dto.BaseDTO;
 
 import javax.ejb.Remote;
 import java.util.List;
@@ -13,4 +12,6 @@ public interface BaseManager<T extends BaseDTO> {
     T find(Integer Id);
 
     List<T> findAll();
+
+    void removeById(Integer Id);
 }

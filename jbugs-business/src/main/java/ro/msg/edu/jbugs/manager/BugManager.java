@@ -1,7 +1,6 @@
 package ro.msg.edu.jbugs.manager;
 
-import ro.msg.edu.jbugs.dto.BugDTO;
-import ro.msg.edu.jbugs.model.entity.Bug;
+import ro.msg.edu.jbugs.dto.dto.BugDTO;
 
 import javax.ejb.Remote;
 import java.util.List;

@@ -1,8 +1,8 @@
 package ro.msg.edu.jbugs.manager;
 
 
-import ro.msg.edu.jbugs.dto.BugDTO;
-import ro.msg.edu.jbugs.dto.BugDTOEntityMapper;
+import ro.msg.edu.jbugs.dto.dto.BugDTO;
+import ro.msg.edu.jbugs.dto.mapper.BugDTOEntityMapper;
 import ro.msg.edu.jbugs.model.dao.BugDao;
 import ro.msg.edu.jbugs.model.entity.Bug;
 import ro.msg.edu.jbugs.model.interceptors.LoggingInterceptor;
@@ -39,6 +39,13 @@ public class BugManagerImpl implements BugManager {
         List<Bug> bugList = bugDao.findAll();
         return bugMapper.getDTOsFromEntities(bugList);
     }
+
+    @Override
+    public void removeById(Integer Id) {
+        Bug bug = bugDao.findById(Id);
+        bugDao.remove(bug);
+    }
+
     @Override
     public List<BugDTO> getByCreatedId(Integer Id)
     {

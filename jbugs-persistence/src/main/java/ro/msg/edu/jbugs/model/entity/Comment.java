@@ -1,7 +1,7 @@
 package ro.msg.edu.jbugs.model.entity;
 
 import javax.persistence.*;
-import java.sql.Date;
+import java.sql.Timestamp;
 
 @Entity
 @Table(name = "comments")
@@ -13,7 +13,7 @@ public class Comment extends BaseEntity{
     public static final String REMOVE_OLD_COMMENTS = "remove old comments";
     public static final String GET_ALL_COMMENTS = "get all comments";
     private String text;
-    private Date date;
+    private Timestamp date;
 
     @ManyToOne
     @JoinColumn(name = "user_id", referencedColumnName = "ID")
@@ -39,11 +39,11 @@ public class Comment extends BaseEntity{
         this.text = text;
     }
 
-    public Date getDate() {
+    public Timestamp getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(Timestamp date) {
         this.date = date;
     }
 

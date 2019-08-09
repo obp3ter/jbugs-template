@@ -1,8 +1,4 @@
-package ro.msg.edu.jbugs.dto;
-
-import ro.msg.edu.jbugs.model.entity.Bug;
-
-import java.util.Set;
+package ro.msg.edu.jbugs.dto.dto;
 
 public class UserDTO extends BaseDTO{
 

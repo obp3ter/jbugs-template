@@ -1,12 +1,12 @@
-package ro.msg.edu.jbugs.dto;
+package ro.msg.edu.jbugs.dto.dto;
 
-import java.sql.Date;
+import java.sql.Timestamp;
 
 public class BugDTO extends BaseDTO{
     private String title;
     private String description;
     private String version;
-    private Date targetDate;
+    private Timestamp targetDate;
     private String status;
     private String fixedVersion;
     private String severity;
@@ -57,11 +57,11 @@ public class BugDTO extends BaseDTO{
         this.version = version;
     }
 
-    public Date getTargetDate() {
+    public Timestamp getTargetDate() {
         return targetDate;
     }
 
-    public void setTargetDate(Date targetDate) {
+    public void setTargetDate(Timestamp targetDate) {
         this.targetDate = targetDate;
     }
 

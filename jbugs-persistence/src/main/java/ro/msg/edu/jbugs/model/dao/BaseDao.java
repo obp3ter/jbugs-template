@@ -12,4 +12,6 @@ public interface BaseDao<T extends BaseEntity> {
     T insert(T entity);
 
     List<T> findAll();
+
+    void remove(T entity);
 }

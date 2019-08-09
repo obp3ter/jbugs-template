@@ -42,6 +42,12 @@ public class BugDaoImpl implements BugDao {
     }
 
     @Override
+    public void remove(Bug entity) {
+        entityManager.remove(entity);
+        entityManager.flush();
+    }
+
+    @Override
     public List<Bug> getByCreatedId(Integer Id)
     {
         User user = new User();

@@ -1,4 +1,4 @@
-package ro.msg.edu.jbugs.dto;
+package ro.msg.edu.jbugs.dto.dto;
 
 import java.io.Serializable;
 
