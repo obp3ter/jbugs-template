@@ -32,14 +32,14 @@ export class AppComponent {
         age : 45,
         roles:[]
       }
-    ]
+    ];
   public colors:string[]=[
     "red",
     "green",
     "blue",
     "yellow",
     "pink"
-  ]
+  ];
   subtitle: string = "OK!";
 
   allertc()
