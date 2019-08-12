@@ -1,0 +1,7 @@
+<p>user-list works!</p>
+  <app-user *ngFor="let u of userList" [user]="u" (output)="alertUserFromList($event)"></app-user>
+<ul>
+  <li *ngFor="let c of colors" [ngStyle]="{'color':c}">
+    <p >{{c}}</p>
+  </li>
+</ul>

@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {User} from "../models/user.model";
+import {User} from "../../models/user.model";
 
 @Component({
   selector: 'app-user-list',
@@ -11,9 +11,16 @@ export class UserListComponent implements OnInit {
   @Input()
   public userList: User[];
 
+  @Input()
+  public  colors: string[];
+  showList: boolean = true;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  alertUserFromList(user: User) {
+    alert(user.firstName);
+  }
 }
