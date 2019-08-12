@@ -1,6 +1,7 @@
 import {Component, ViewChild} from '@angular/core';
 import {Roles, User} from "./user/models/user.model";
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -41,6 +42,7 @@ export class AppComponent {
     "pink"
   ];
   subtitle: string = "OK!";
+
 
   allertc()
   {

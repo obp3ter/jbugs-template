@@ -1,1 +1,1 @@
-<div *ngIf="user.firstName!='Batman'">{{user.firstName}} {{user.lastName}}, {{user.age}} <button (click)="alertUser(user)">emmit</button></div>
+<div *ngIf="user.firstName!='Batman'">{{user.firstName}} {{user.lastName}}, {{user.age}} <button (click)="alertUser(user)">emmit</button><button appHideCloseBug [user]="user" >close bug</button></div>
