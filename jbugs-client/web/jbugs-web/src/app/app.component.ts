@@ -13,27 +13,6 @@ export class AppComponent {
   @ViewChild('userList', {static:false})
   public userListComponentChild;
 
-  public users: User[] =
-    [
-      {
-        firstName : "Péter",
-        lastName : "Oprea-Benkő",
-        age: 21,
-        roles:[Roles.CREATE_BUG,Roles.EDIT_BUG,Roles.DELETE_BUG]
-      },
-      {
-        firstName : "Batman",
-        lastName : "",
-        age : 57,
-        roles:[]
-      },
-      {
-        firstName : "John",
-        lastName : "Smith",
-        age : 45,
-        roles:[]
-      }
-    ];
   public colors:string[]=[
     "red",
     "green",

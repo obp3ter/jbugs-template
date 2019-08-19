@@ -1,5 +1,6 @@
 import {AfterViewInit, Directive, ElementRef, Input} from '@angular/core';
-import {Roles, User} from "../../models/user.model";
+import {User} from "../../models/user.model";
+import {UserService} from "../../services/user.service";
 
 @Directive({
   selector: '[appHideCloseBug]'
@@ -8,7 +9,7 @@ export class HideCloseBugDirective implements AfterViewInit{
   @Input()
   user:User;
 
-  constructor(private el:ElementRef) {
+  constructor(private el:ElementRef, private userService:UserService) {
 
   }
 
@@ -19,7 +20,7 @@ export class HideCloseBugDirective implements AfterViewInit{
 
   ngAfterViewInit(): void {
     console.log(this.user);
-    if(this.user.roles.indexOf(Roles.DELETE_BUG)==-1)
+    if(!this.userService.hasCloseBug(this.user))
       this.el.nativeElement.disabled=true;
   }
 

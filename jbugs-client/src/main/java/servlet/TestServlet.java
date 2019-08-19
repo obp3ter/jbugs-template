@@ -5,7 +5,6 @@ import ro.msg.edu.jbugs.manager.BugManager;
 import ro.msg.edu.jbugs.dto.dto.UserDTO;
 import ro.msg.edu.jbugs.manager.NotificationManager;
 import ro.msg.edu.jbugs.manager.UserManager;
-import ro.msg.edu.jbugs.model.exception.BusinessException;
 
 import javax.ejb.EJB;
 import javax.servlet.ServletException;
@@ -62,40 +61,40 @@ public class TestServlet extends HttpServlet {
                 try no such user
          */
 
-        try {
-            out.println(userManager.login("testlte","testp").toString());
-        } catch (BusinessException e) {
-            out.println("<p>"+e.getMessage()+"</p>");
-        }
-        try {
-            out.println(userManager.login("testle","testp").toString());
-        } catch (BusinessException e) {
-            out.println("<p>"+e.getMessage()+"</p>");
-        }
-        for (int i = 0; i < 3; i++) {
-            try {
-                out.println(userManager.login("testlte","tesp").toString());
-            } catch (BusinessException e) {
-                out.println("<p>"+e.getMessage()+"</p>");
-            }
-        }
-        try {
-            out.println(userManager.login("testlte","testp").toString());
-        } catch (BusinessException e) {
-            out.println("<p>"+e.getMessage()+"</p>");
-        }
-        for (int i = 0; i < 5; i++) {
-            try {
-                out.println(userManager.login("testlte","tesp").toString());
-            } catch (BusinessException e) {
-                out.println("<p>"+e.getMessage()+"</p>");
-            }
-        }
-        try {
-            out.println(userManager.login("testlte","testp").toString());
-        } catch (BusinessException e) {
-            out.println("<p>"+e.getMessage()+"</p>");
-        }
+//        try {
+//            out.println(userManager.login("testlte","testp").toString());
+//        } catch (BusinessException e) {
+//            out.println("<p>"+e.getMessage()+"</p>");
+//        }
+//        try {
+//            out.println(userManager.login("testle","testp").toString());
+//        } catch (BusinessException e) {
+//            out.println("<p>"+e.getMessage()+"</p>");
+//        }
+//        for (int i = 0; i < 3; i++) {
+//            try {
+//                out.println(userManager.login("testlte","tesp").toString());
+//            } catch (BusinessException e) {
+//                out.println("<p>"+e.getMessage()+"</p>");
+//            }
+//        }
+//        try {
+//            out.println(userManager.login("testlte","testp").toString());
+//        } catch (BusinessException e) {
+//            out.println("<p>"+e.getMessage()+"</p>");
+//        }
+//        for (int i = 0; i < 5; i++) {
+//            try {
+//                out.println(userManager.login("testlte","tesp").toString());
+//            } catch (BusinessException e) {
+//                out.println("<p>"+e.getMessage()+"</p>");
+//            }
+//        }
+//        try {
+//            out.println(userManager.login("testlte","testp").toString());
+//        } catch (BusinessException e) {
+//            out.println("<p>"+e.getMessage()+"</p>");
+//        }
 
 
     }

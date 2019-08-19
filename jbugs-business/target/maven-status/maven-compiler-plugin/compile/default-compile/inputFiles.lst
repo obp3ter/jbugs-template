@@ -3,12 +3,14 @@ C:\Users\ObP3t\IdeaProjects\jbugs-template\jbugs-business\src\main\java\ro\msg\e
 C:\Users\ObP3t\IdeaProjects\jbugs-template\jbugs-business\src\main\java\ro\msg\edu\jbugs\dto\dto\BugDTO.java
 C:\Users\ObP3t\IdeaProjects\jbugs-template\jbugs-business\src\main\java\ro\msg\edu\jbugs\dto\dto\incomplete\RoleDTOComplete.java
 C:\Users\ObP3t\IdeaProjects\jbugs-template\jbugs-business\src\main\java\ro\msg\edu\jbugs\manager\BaseManager.java
+C:\Users\ObP3t\IdeaProjects\jbugs-template\jbugs-business\src\main\java\ro\msg\edu\jbugs\CorsFilter.java
 C:\Users\ObP3t\IdeaProjects\jbugs-template\jbugs-business\src\main\java\ro\msg\edu\jbugs\manager\UserManager.java
 C:\Users\ObP3t\IdeaProjects\jbugs-template\jbugs-business\src\main\java\ro\msg\edu\jbugs\dto\dto\incomplete\NotificationDTOComplete.java
 C:\Users\ObP3t\IdeaProjects\jbugs-template\jbugs-business\src\main\java\ro\msg\edu\jbugs\dto\dto\incomplete\BugDTOComplete.java
 C:\Users\ObP3t\IdeaProjects\jbugs-template\jbugs-business\src\main\java\ro\msg\edu\jbugs\dto\dto\BaseDTO.java
 C:\Users\ObP3t\IdeaProjects\jbugs-template\jbugs-business\src\main\java\ro\msg\edu\jbugs\dto\dto\incomplete\CommentDTO.java
 C:\Users\ObP3t\IdeaProjects\jbugs-template\jbugs-business\src\main\java\ro\msg\edu\jbugs\manager\BugManager.java
+C:\Users\ObP3t\IdeaProjects\jbugs-template\jbugs-business\src\main\java\ro\msg\edu\jbugs\services\UserService.java
 C:\Users\ObP3t\IdeaProjects\jbugs-template\jbugs-business\src\main\java\ro\msg\edu\jbugs\dto\dto\incomplete\CommentDTOComplete.java
 C:\Users\ObP3t\IdeaProjects\jbugs-template\jbugs-business\src\main\java\ro\msg\edu\jbugs\dto\dto\incomplete\AttachmentDTOComplete.java
 C:\Users\ObP3t\IdeaProjects\jbugs-template\jbugs-business\src\main\java\ro\msg\edu\jbugs\dto\mapper\BugDTOEntityMapper.java
@@ -18,6 +20,7 @@ C:\Users\ObP3t\IdeaProjects\jbugs-template\jbugs-business\src\main\java\ro\msg\e
 C:\Users\ObP3t\IdeaProjects\jbugs-template\jbugs-business\src\main\java\ro\msg\edu\jbugs\dto\mapper\BaseDTOEntityMapper.java
 C:\Users\ObP3t\IdeaProjects\jbugs-template\jbugs-business\src\main\java\ro\msg\edu\jbugs\dto\dto\incomplete\RoleDTO.java
 C:\Users\ObP3t\IdeaProjects\jbugs-template\jbugs-business\src\main\java\ro\msg\edu\jbugs\manager\NotificationManagerImpl.java
+C:\Users\ObP3t\IdeaProjects\jbugs-template\jbugs-business\src\main\java\ro\msg\edu\jbugs\BaseREST.java
 C:\Users\ObP3t\IdeaProjects\jbugs-template\jbugs-business\src\main\java\ro\msg\edu\jbugs\dto\dto\UserDTO.java
 C:\Users\ObP3t\IdeaProjects\jbugs-template\jbugs-business\src\main\java\ro\msg\edu\jbugs\dto\dto\incomplete\AttachmenDTO.java
 C:\Users\ObP3t\IdeaProjects\jbugs-template\jbugs-business\src\main\java\ro\msg\edu\jbugs\dto\dto\BaseDTOComplete.java

@@ -1,7 +1,13 @@
 export interface User {
+  ID:number;
+  counter:number;
+  email:string;
   firstName:string;
   lastName:string;
-  age:number;
+  mobileNumber:string;
+  password:string;
+  status:number;
+  username:string;
   roles?:Roles[];
 }
 export enum Roles {

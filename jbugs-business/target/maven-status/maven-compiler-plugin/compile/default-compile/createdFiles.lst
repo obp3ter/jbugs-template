@@ -7,6 +7,7 @@ ro\msg\edu\jbugs\dto\dto\incomplete\RoleDTOComplete.class
 ro\msg\edu\jbugs\dto\dto\incomplete\UserDTOComplete.class
 ro\msg\edu\jbugs\dto\mapper\NotificationDTOEntityMapper.class
 ro\msg\edu\jbugs\manager\BaseManager.class
+ro\msg\edu\jbugs\services\UserService.class
 ro\msg\edu\jbugs\dto\dto\NotificationDTO.class
 ro\msg\edu\jbugs\Cleaner.class
 ro\msg\edu\jbugs\dto\mapper\BaseDTOEntityMapper.class
@@ -15,7 +16,9 @@ ro\msg\edu\jbugs\dto\dto\incomplete\AttachmenDTO.class
 ro\msg\edu\jbugs\dto\mapper\UserDTOEntityMapper.class
 ro\msg\edu\jbugs\Email\Email.class
 ro\msg\edu\jbugs\dto\dto\incomplete\NotificationDTOComplete.class
+ro\msg\edu\jbugs\CorsFilter.class
 ro\msg\edu\jbugs\Email\Email$1.class
+ro\msg\edu\jbugs\BaseREST.class
 ro\msg\edu\jbugs\dto\dto\UserDTO.class
 ro\msg\edu\jbugs\manager\NotificationManagerImpl.class
 ro\msg\edu\jbugs\dto\dto\BaseDTOComplete.class

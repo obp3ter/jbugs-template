@@ -15,6 +15,8 @@ import ro.msg.edu.jbugs.model.entity.User;
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
 import javax.interceptor.Interceptors;
+import javax.ws.rs.*;
+import javax.ws.rs.core.MediaType;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -47,6 +49,7 @@ public class UserManagerImpl implements UserManager {
     {
         return userMapper.getDTOFromEntity(userDao.findById(Id));
     }
+
     @Override
     public List<UserDTO> findAll()
     {
